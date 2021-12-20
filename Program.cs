@@ -11,18 +11,18 @@ namespace metotlar
     {
         public static void Main(string[] args)
         {
-            int toplam = 0;
+            int sum = 0;
             WriteLine("Please input a string: ");
-            string yazi = ReadLine();
+            string str1 = ReadLine();
 
-            foreach(char x in yazi)
+            foreach(char x in str1)
             {
                 if(x == ' ')
                 {
-                    toplam = toplam + 1;
+                    sum = sum + 1;
                 }
             }
-            WriteLine(yazi + " contains " + toplam + " spaces.");
+            WriteLine(str1 + " contains " + sum + " spaces.");
         }
        
     }
